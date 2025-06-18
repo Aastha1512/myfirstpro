@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fefefe;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      border: 1px solid #ccc;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      gap: 30px;
+    }
+
+    .left {
+      text-align: center;
+    }
+
+    .left img {
+      width: 100px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .left h3 {
+      margin: 0;
+      text-transform: lowercase;
+    }
+
+    .left p {
+      color: green;
+      font-weight: bold;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .right h2 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .right .location-btn {
+      background-color: #c44600;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    .price-details {
+      font-size: 16px;
+    }
+
+    .price-details p {
+      margin: 5px 0;
+    }
+
+    .place-order-btn {
+      background-color: #c44600;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      width: fit-content;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">
+      <img src="https://i.imgur.com/tvN4sR2.jpg" alt="chhole bhature">
+      <h3>chhole bhature</h3>
+      <p>₹265</p>
+    </div>
+
+    <div class="right">
+      <h2>select your order<span style="font-size: 16px; margin-left: 10px;">choose delivery address</span></h2>
+      <button class="location-btn">Add Location</button>
+
+      <div class="price-details">
+        <p>item price: ₹0</p>
+        <p>Delivery charge: ₹25</p>
+        <p>Taxes: ₹7</p>
+        <p><strong>Total: ₹297</strong></p>
+      </div>
+
+      <button class="place-order-btn">PLACE ORDER</button>
+    </div>
+  </div>
+
+</body>
+</html>
